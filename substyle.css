@@ -178,18 +178,11 @@ padding: 0px;
     margin: 20px 0px 20px 0px;
 }
 
-   .img-exponent
-   {
-       /* position: absolute;
-       z-index:2;
-       left: 810px;
-       top: 50px; */
-   }
 
 
    .grid-s2
    {
-       /* position: relative; */
+       position: relative;
        display: grid;
        grid-template-columns: repeat(4,300px);
        grid-auto-rows: 300px 300px 300px 300px;
@@ -252,31 +245,30 @@ padding: 0px;
 
   .grid-i3, .grid-i5
   {
-    /* position: absolute;
-    display:flex;
-    flex-direction: column;
-    flex-wrap:wrap; */
+     display: flex;
+     flex-wrap: wrap;
       
     border-radius: 5px;
     border: 0.1vh solid #DCDCDC;
     background-color: #FFFFFF;
     margin-top: 20px; 
+    align-content: end;
+    justify-self: right;
 }
 
   .grid-i3:hover ,.grid-i5:hover
   {
     
-    border: 0.1vh solid rgba(56,213,82,1);;
+    border: 0.1vh solid rgba(56,213,82,1);
     background-color: rgba(56,213,82,1);
   }
 
 
   .grid-i4, .grid-i6
   {
-      /* position: absolute;
-    display:flex;
-    flex-direction: column;
-    flex-wrap:wrap; */
+    display: flex;
+flex-wrap:wrap;
+
 
     border-radius: 5px;
     border: 0.1vh solid #DCDCDC;
@@ -291,32 +283,71 @@ padding: 0px;
     background-color: rgba(56,213,82,1);
   }
 
-/* .square1
+.flex-d
 {
-    position: absolute;
-    display:flex;
+    display: flex;
+    flex-wrap:wrap; 
+}
+.heading-flex
+{
+  color: #0000;
+  font-size: 2.2vh;
+  font-family: "arial ";
+  font-weight:bold;  
+}
+.p-flex
+{
+    color:#808080;
+    font-size: 2.2vh;
+    font-family: "arial narrow";
+}
+
+
+
+
+
+
+
+
+.phone
+{
+    background-image:url('imag/phone.jpg');
+    background-size: cover;
+    background-position: center;
+    max-width: 50vh;
+}
+
+.handshak
+{
+    background-image:url('imag/phone.jpg');
+    background-size: cover;
+    background-position: center;
+    max-width: 50vh;
+}
+
+
+.flex-container
+{
+    fisplay: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.container-item
+{
+width: 200px;
+border: 3px solod #333;
+background-color: #dfdfdf;
+} 
+.container-item1
+{
+
+}
+.container-item2
+{
     
-    width: 200px;
-    grid-template-rows: 240px 240px ;
-     grid-gap: 10px;
-} */
-
-    /* .grid-i3{
-        position: absolute;
-     grid-column: span  2;
-     grid-row: span 2;
-    }
- 
-    .grid-i4{
-        position: absolute;
-     grid-column:4/6;
-     grid-row:4/6;
-    } */
-
-   /* 
-   
-   .grid-i5{
-       position: absolute;
-       grid-column:3/4;
-    grid-row:6/7;
-} */
+}
+.container-item3
+{
+    flex-grow: 1;
+}
