@@ -317,15 +317,15 @@ padding: 0px;
     background-image:url('imag/phone.jpg');
     background-size: cover;
     background-position: center;
-    max-width: 80rem;
+    max-width: 10rem;
 }
 
-.handshak
+.handshake
 {
-    background-image:url('imag/phone.jpg');
+    background-image:url('imag/handshak.jpg');
     background-size: cover;
     background-position: center;
-    max-width: 50rem;
+    max-width: 10rem;
 }
 
 
