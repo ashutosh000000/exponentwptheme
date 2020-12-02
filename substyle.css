@@ -317,7 +317,11 @@ padding: 0px;
     background-image:url('imag/phone.jpg');
     background-size: cover;
     background-position: center;
-    max-width: 10rem;
+    max-width: 15rem;
+}
+.phone-data:hover .phone-data
+{
+    margin: 0px 0px 10px 0px;
 }
 
 .handshake
@@ -325,8 +329,19 @@ padding: 0px;
     background-image:url('imag/handshak.jpg');
     background-size: cover;
     background-position: center;
-    max-width: 10rem;
+    max-width: 15rem;
 }
+.handshake-data:hover .handshake-data
+{
+    animation: 1s linear goesup;
+}
+
+@keyframe goesup
+{
+    0%{transform:translate(0px, 0px); transition: transform 1s linear;}
+    100%{transform:translate(0px, -5px); transition: transform 1s linear;}
+}
+
 
 
 .flex-container
@@ -364,10 +379,11 @@ background-color: #dfdfdf;
     display: flex;
     align-content: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
 }
 
-.phone-data, .handshake-data, .m-w-f-y, .stark-corp, .boy-img
+.mmethods-div, .methods-data, .signup-data, .investment-data, .wealth-data, .div-container1, .phone-data, .handshake-data, .m-w-f-y, .stark-corp, .boy-img
 {
     background-color: grey;
     border: 0.1rem solid orchid;   
@@ -378,10 +394,61 @@ background-color: #dfdfdf;
     flex-direction: column;
 }
 
-.boy-img
+.boy-img 
 {
-    background-image: url('imag/standing-man.jpg');
+    background-image: url('imag/standing-man.png');
     background-size: cover;
     background-position: center;
     max-height: 50rem;
+    max-width: 40rem;
+}
+
+
+.div-container1
+{
+    flex-direction: column;
+    align-items: stretch;
+    justify-content:space-around ;
+}
+
+
+.teacher
+{
+    max-width: 40rem;
+}
+
+
+.circle-img
+{
+    height:2rem;
+width: 2rem;
+padding: 0.4rem;
+border-radius: 3rem;
+
+}
+
+.currency, .antena, .lock
+{
+    background-color:red;
+    /* background-image: url('imag/currency.png'); */
+    background-position: center;
+    background-size: cover;
+}
+.antena
+{
+    /* background-image: url('imag/antena.png'); */
+}
+
+.lock
+{
+    /* background-image: url('imag/lock.png'); */
+}
+
+
+
+.hidden-changes, .quick-safe, .anaward{
+    display: flex;
+    justify-items: right;
+    justify-content: space-around;
+    align-items: center;
 }
