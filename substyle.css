@@ -101,10 +101,10 @@ padding: 0px;
   .signup1
   {
       margin: 15px 0px 0px 5px;
-      padding: 7px 17px 7px 17px;
+      padding: 7px 17px;
       Background-color: #7CFC00;
       font-family: "Arial narrow";
-      font-size: 2vh;
+      font-size: 0.8rem;
       font-weight: thin;
 
   }
@@ -113,7 +113,7 @@ padding: 0px;
       padding: 7px 17px 7px 17px;
       Background-color: #000000;
       font-family: "Arial narrow";
-      font-size: 2vh;
+      font-size: 0.8rem;
       font-weight: thin;
 
   }
@@ -152,7 +152,7 @@ padding: 0px;
     background-color: #32CD32;
     color: #FFFFFF;
     border-radius: 3px;
-    font-size: 2vh;
+    font-size: 1rem;
     /* margin: 0px 0px 20px 0px; */
     letter-spacing: 3px;
 }
@@ -169,12 +169,13 @@ padding: 0px;
     letter-spacing: 1px;
     word-spacing: 5px;
     font-family: "arial narrow";
-    font-size: 7vh;
+    font-size: 4vw;
+    font-weight: 1px;
 }
 
 .p-inside
 {
-    font-size: 3vh;
+    font-size: 2vw;
     margin: 20px 0px 20px 0px;
 }
 
@@ -206,6 +207,63 @@ padding: 0px;
      align-content: center; 
     }
 
+
+
+    .square
+    {
+        background-color: rgba(250,128,114,1);
+        color: #FFFFFF;
+    }
+    .div-container2
+    {
+        background-color: gray;
+        /* grba(250,128,114,0.3); */
+        display: grid;
+        grid-template-columns: 200px 150px 200px 150px 50px 150px 50px;
+        grid-template-rows:10px 240px 240px 10px 10px ;
+        grid-gap:20px 20px;
+    }
+
+    .div-item
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        
+    }
+
+    .div-item1
+    {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .div-item2
+    {
+        grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .div-item3
+    {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .div-item4
+    {
+        grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
 /* .grid-flex
 {
     display:flex;
@@ -315,9 +373,17 @@ padding: 0px;
 .phone
 {
     background-image:url('imag/phone.jpg');
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
-    max-width: 15rem;
+    max-width: 20rem;
+    max-height: 15rem;
+}
+
+.phone-data
+{
+    max-width: 60rem;
+    max-height: 50rem;
 }
 .phone-data:hover .phone-data
 {
@@ -329,24 +395,36 @@ padding: 0px;
     background-image:url('imag/handshak.jpg');
     background-size: cover;
     background-position: center;
-    max-width: 15rem;
+    width: 15rem;
+    height: 15rem;
 }
+
+.handshake-data
+{
+    max-width: 400px;
+    max-height: 400px;
+}
+
 .handshake-data:hover .handshake-data
 {
     animation: 1s linear goesup;
 }
 
-@keyframe goesup
+@keyframes goesup
 {
     0%{transform:translate(0px, 0px); transition: transform 1s linear;}
     100%{transform:translate(0px, -5px); transition: transform 1s linear;}
 }
 
+.handshake1,.phone1
+{
+    opacity:0;
+}
 
 
 .flex-container
 {
-    fisplay: flex;
+    display: flex;
     flex-wrap:wrap;
     justify-content: center;
 }
@@ -377,10 +455,12 @@ background-color: #dfdfdf;
     background-color: lawngreen;
     border: 0.1rem solid lightcoral;
     display: flex;
-    align-content: center;
+    align-items: space-around;
+    /* align-content: center; */
     justify-content: space-evenly;
     flex-wrap: wrap;
-
+    align-items: stretch;
+    /* height: 600px; */
 }
 
 .mmethods-div, .methods-data, .signup-data, .investment-data, .wealth-data, .div-container1, .phone-data, .handshake-data, .m-w-f-y, .stark-corp, .boy-img
@@ -394,14 +474,43 @@ background-color: #dfdfdf;
     flex-direction: column;
 }
 
-.boy-img 
+.boy-img1 
 {
-    background-image: url('imag/standing-man.png');
-    background-size: cover;
-    background-position: center;
-    max-height: 50rem;
-    max-width: 40rem;
+    background: url("imag/standing-man1.png") no-repeat center;
+    background-color: #e999e9;
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    /* background-position: center; */
+    /* max-height: 80%; */
+    /* max-width: 520px; */
+    /* height: 500px; */
+
 }
+.boy-img1, object
+{
+
+    max-width: 90%;
+    padding-top: 0.66%;
+}
+
+boy-img
+{
+    width: 520px;
+    height: 857px;
+}
+/* .boy-img, object
+{
+    opacity: 0;
+    max-height: 100%;
+    max-width: 100%;
+
+} */
+
+/* .boy-img, object
+{
+    max-width: 90%;
+    max-hight: 90%;
+} */
 
 
 .div-container1
@@ -411,11 +520,16 @@ background-color: #dfdfdf;
     justify-content:space-around ;
 }
 
-
 .teacher
 {
-    max-width: 40rem;
+    width: 800px;
 }
+
+.teacher, object
+{
+    max-width: 90%;
+}
+
 
 
 .circle-img
